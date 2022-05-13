@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head> 
+<body>
+    <div class="container">
+        <h1 id="text"></h1>
+        <button id="btn" onclick="darah()">click</button>
+    </div>
+</body>
+<script>
+    
+    const darah = function (){
+        const randomPerson = ['Hulan ','Enhjin ','Bat ','Turuu ','Amaraa ','Anhaa ','Zulaa ','Zorigoo ','Enhee ','Usuhuu ']
+        const randomPlace = ['Ulaanbaatart ','Darhand ','Huvsguld ','Arhangaid ','Zavhand ','Uvurhangaid ','Dundgovid ','Uvsd ','Umnugovid ','Dornogovid ']
+        const randomAction = ['hicheeleldeg.','amidardag.','sagsan bumbug toglodog.','suraltsdag.','ajildag.','delguur ajiluuldag.','surguuld yavdag.','aylal hiisen.','baigaa.','hicheel zaadag.']
+  
+        document.getElementById("text").innerHTML = (randomPerson[Math.floor(Math.random()*10)] + randomPlace[Math.floor(Math.random()*10)] + randomAction[Math.floor(Math.random()*10)])
+        console.log(randomPerson[Math.floor(Math.random()*10+1)] + randomPlace[Math.floor(Math.random()*10+1)] + randomAction[Math.floor(Math.random()*10+1)])
+    }
+</script>
+</html>

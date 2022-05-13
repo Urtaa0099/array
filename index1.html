@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var triangle1 = {
+     a: 10,
+     b: 10,
+     c: 10,
+   } 
+   var triangle2 = {
+     a: 20, 
+     b: 5,
+     c: 5,
+   }
+   const traingleArea=function(triangle){
+       const a = triangle.a;
+       const b = triangle.b;
+       const c = triangle.c;
+       const s = (a+b+c)/2;
+       return  Area = Math.sqrt( s * (s-a) * (s-b) * (s-c));
+   }
+   if(traingleArea(triangle1)>traingleArea(triangle2)){
+       console.log("Triangle1 илүү талбай эзлэж байна.")
+   }else if(traingleArea(triangle2)>traingleArea(triangle1)){
+    console.log("Triangle2 илүү талбай эзлэж байна.")
+   }
+</script>
+</html>
